@@ -17,4 +17,10 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+  ui: {
+    icons: ['ph', 'simple-icons'],
+  },
+  colorMode: {
+    preference: 'dark',
+  },
 })
