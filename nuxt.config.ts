@@ -4,8 +4,13 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
-
-  modules: ['@nuxt/eslint'],
+  extends: [
+    '@nuxt/ui-pro',
+  ],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+  ],
   eslint: {
     config: {
       stylistic: true,
