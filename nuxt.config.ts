@@ -1,26 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  typescript: {
-    typeCheck: true,
-  },
-  extends: [
-    '@nuxt/ui-pro',
-  ],
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxt/fonts',
-  ],
-  eslint: {
-    config: {
-      stylistic: true,
-    },
-  },
+  extends: ['@nuxt/ui-pro'],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/fonts'],
   ui: {
-    icons: ['ph', 'simple-icons'],
+    icons: ['ph', 'simple-icons']
   },
   colorMode: {
-    preference: 'dark',
+    preference: 'dark'
   },
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  }
 })
